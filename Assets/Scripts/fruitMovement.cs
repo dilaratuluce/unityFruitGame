@@ -42,6 +42,11 @@ public class fruitMovement : MonoBehaviour
         {
             i -= 0.005f;
             GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, i);
+
+            if (i <= 0) //----> 26 ağust
+            {
+                Destroy(this.gameObject);
+            }
         }
 
     }
