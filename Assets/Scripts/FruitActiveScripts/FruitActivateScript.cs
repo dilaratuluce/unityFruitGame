@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FruitActivateScript : MonoBehaviour
 {
@@ -14,11 +15,23 @@ public class FruitActivateScript : MonoBehaviour
     int sayi;
     bool meyveKoyuldu;
 
+    
+    public Text newFruitText;
+    bool beklemeTamamlandi;
+    IEnumerator birazbekle(float saniye) // (zaman kullanılan şeyler bu şekilde bir coroutine içinde yazılabiliyor)
+    {
+        yield return new WaitForSecondsRealtime(saniye);
+        beklemeTamamlandi = true;
+    }
+
     void Start()
     {
 
         meyveKoyuldu = false;
         sayi = 0;
+
+        beklemeTamamlandi = false;
+        newFruitText.text = "";
 
     }
 
@@ -41,6 +54,12 @@ public class FruitActivateScript : MonoBehaviour
             Debug.Log(score + " meyvekoyuldu false oldu yine");
         }
 
+        if (beklemeTamamlandi)
+        {
+            beklemeTamamlandi = false;
+            newFruitText.text = "";
+        }
+
     }
 
     void meyveKoy()
@@ -48,50 +67,63 @@ public class FruitActivateScript : MonoBehaviour
 
         if (sayi == 0)
         {
+            newFruitText.text = "New Fruit Alert!";
             Instantiate(orangePrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             Debug.Log("portakalı koydum");
-            sayi += 1;
+            sayi += 1; // deneyince burayı geri aç
+            StartCoroutine(birazbekle(1));
+           
         }
 
         else if (sayi == 1)
         {
+            newFruitText.text = "New Fruit Alert!";
             Instantiate(pineapplePrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             Debug.Log("ananası koydum");
             sayi += 1;
+            StartCoroutine(birazbekle(1));
         }
 
         else if (sayi == 2)
         {
+            newFruitText.text = "New Fruit Alert!";
             Instantiate(cherryPrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             Debug.Log("kirazı koydum");
             sayi += 1;
+            StartCoroutine(birazbekle(1));
         }
 
         else if (sayi == 3)
         {
+            newFruitText.text = "New Fruit Alert!";
             Instantiate(melonPrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             Debug.Log("karpuzu koydum");
             sayi += 1;
+            StartCoroutine(birazbekle(1));
         }
 
         else if (sayi == 4)
         {
+            newFruitText.text = "New Fruit Alert!";
             Instantiate(kiwiPrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             Debug.Log("kiwiyi koydum");
             sayi += 1;
+            StartCoroutine(birazbekle(1));
         }
 
         else if (sayi == 5)
         {
+            newFruitText.text = "New Fruit Alert!";
             Instantiate(applePrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             Debug.Log("elmayı koydum");
             sayi = 0;
+            StartCoroutine(birazbekle(1));
         }
     }
 }
