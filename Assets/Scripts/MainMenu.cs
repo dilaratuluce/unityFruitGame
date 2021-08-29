@@ -47,5 +47,10 @@ public class MainMenu : MonoBehaviour
         twoPlayer = true;
         SceneManager.LoadScene("2PlayerScene");  
     }
+
+    public void About()
+    {
+        SceneManager.LoadScene("InfoScene");
+    }
 }
 

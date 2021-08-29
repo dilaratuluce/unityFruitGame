@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PlayerOptions.unity
     guid: fd00795fcc6764b2eb6b9f4cc087a0b4
   - enabled: 1
+    path: Assets/Scenes/InfoScene.unity
+    guid: 671b9a063bcf248159af02a96df112d3
+  - enabled: 1
     path: Assets/Scenes/1PlayerScene.unity
     guid: 5a7e2c8585d144845a6498057c617451
   - enabled: 1

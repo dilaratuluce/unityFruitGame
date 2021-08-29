@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1111003589443905576, guid: 26390d9c2249242a1a53d4240644466b, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1111003589443905576, guid: 26390d9c2249242a1a53d4240644466b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1250,7 +1250,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &591867115
 MonoBehaviour:
@@ -1383,6 +1383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orangeToActivate: {fileID: 0}
+  activated: 0
   orangeScoreToActivate: 3
 --- !u!4 &655999164
 Transform:
@@ -1411,6 +1412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pineappleToActivate: {fileID: 0}
+  activated: 0
   pineappleScoreToActivate: 6
 --- !u!114 &655999166
 MonoBehaviour:
@@ -1425,6 +1427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cherryToActivate: {fileID: 0}
+  activated: 0
   cherryScoreToActivate: 12
 --- !u!114 &655999167
 MonoBehaviour:
@@ -1439,6 +1442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   melonToActivate: {fileID: 0}
+  activated: 0
   melonScoreToActivate: 16
 --- !u!114 &655999168
 MonoBehaviour:
@@ -1453,6 +1457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kiwiToActivate: {fileID: 0}
+  activated: 0
   kiwiScoreToActivate: 22
 --- !u!114 &655999169
 MonoBehaviour:
@@ -1719,7 +1724,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &833352680
 MonoBehaviour:
@@ -2876,7 +2881,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1685065857
 MonoBehaviour:
@@ -3157,50 +3162,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1819438796
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1819438798}
-  - component: {fileID: 1819438797}
-  m_Layer: 0
-  m_Name: NewFruitTextController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1819438797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819438796}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 430d2b0766afd4023a8e91fbc9bc0d41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newFruitText: {fileID: 1246766487}
---- !u!4 &1819438798
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819438796}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0695424, y: -0.77245086, z: -490.91522}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1860377998
 GameObject:
   m_ObjectHideFlags: 0
