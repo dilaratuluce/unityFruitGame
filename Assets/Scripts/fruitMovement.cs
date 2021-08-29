@@ -68,13 +68,13 @@ public class fruitMovement : MonoBehaviour
         if(collision.gameObject.tag == "grassGround")  // bugün yeni, meyveler düşünce eziliyor
         {
             f_collider.isTrigger = true;
+            rgb.constraints = RigidbodyConstraints2D.FreezeAll;
             transform.position = new Vector3(transform.position.x, -4.1f, 0);
             transform.localScale = new Vector3(6,2,0);
 
-            rgb.gravityScale = 0;
-            rgb.velocity = Vector2.zero;
-
-
+        //    rgb.velocity = Vector2.zero;
+        //    rgb.gravityScale = 0;
+            
             StartCoroutine(birazbekle(3)); // 15 ağust
             dusmus = true; //15 ağust
              
