@@ -69,7 +69,7 @@ public class FruitActivateScript : MonoBehaviour
         if (sayi == 0)
         {
             newFruitText.text = "New Fruit Alert!";
-            Instantiate(orangePrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
+            Instantiate(orangePrefab, new Vector3(Random.Range(-5, 5), 2.5f, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             sayi += 1; // deneyince burayı geri aç
             StartCoroutine(birazbekle(1));
@@ -79,7 +79,7 @@ public class FruitActivateScript : MonoBehaviour
         else if (sayi == 1)
         {
             newFruitText.text = "New Fruit Alert!";
-            Instantiate(pineapplePrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
+            Instantiate(pineapplePrefab, new Vector3(Random.Range(-5, 5), 2.5f, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             sayi += 1;
             StartCoroutine(birazbekle(1));
@@ -88,7 +88,7 @@ public class FruitActivateScript : MonoBehaviour
         else if (sayi == 2)
         {
             newFruitText.text = "New Fruit Alert!";
-            Instantiate(cherryPrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
+            Instantiate(cherryPrefab, new Vector3(Random.Range(-5, 5), 2.5f, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             sayi += 1;
             StartCoroutine(birazbekle(1));
@@ -97,7 +97,7 @@ public class FruitActivateScript : MonoBehaviour
         else if (sayi == 3)
         {
             newFruitText.text = "New Fruit Alert!";
-            Instantiate(melonPrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
+            Instantiate(melonPrefab, new Vector3(Random.Range(-5, 5), 2.5f, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             sayi += 1;
             StartCoroutine(birazbekle(1));
@@ -106,7 +106,7 @@ public class FruitActivateScript : MonoBehaviour
         else if (sayi == 4)
         {
             newFruitText.text = "New Fruit Alert!";
-            Instantiate(kiwiPrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
+            Instantiate(kiwiPrefab, new Vector3(Random.Range(-5, 5), 2.5f, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             sayi += 1;
             StartCoroutine(birazbekle(1));
@@ -115,7 +115,7 @@ public class FruitActivateScript : MonoBehaviour
         else if (sayi == 5)
         {
             newFruitText.text = "New Fruit Alert!";
-            Instantiate(bananaPrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
+            Instantiate(bananaPrefab, new Vector3(Random.Range(-5, 5), 2.5f, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             sayi += 1;
             StartCoroutine(birazbekle(1));
@@ -124,7 +124,7 @@ public class FruitActivateScript : MonoBehaviour
         else if (sayi == 6)
         {
             newFruitText.text = "New Fruit Alert!";
-            Instantiate(applePrefab, new Vector3(Random.Range(-5, 5), 2, 0), new Quaternion(0, 0, 0, 0));
+            Instantiate(applePrefab, new Vector3(Random.Range(-5, 5), 2.5f, 0), new Quaternion(0, 0, 0, 0));
             DropFruit.activeFruitNum += 1;
             sayi = 0;
             StartCoroutine(birazbekle(1));
